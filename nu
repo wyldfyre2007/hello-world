@@ -13,8 +13,8 @@ class Sample extends Adapter
   run: ->
     @robot.logger.info "Run"
     @emit "connected"
-    user = new User 1001, name: 'Sample User'
-    message = new TextMessage user, 'Some Sample Message', 'MSG-001'
+    user = new User 1001, name: 'heather'
+    message = new TextMessage user, 'I am your new study buddy', 'MSG-001'
     @robot.receive message
 
 
@@ -23,7 +23,7 @@ exports.use = (robot) ->
  "dependencies": {
   },
   "peerDependencies": {
-    "hubot": ">=2.0"
+    "olliet": ">=2.0"
   },
   "devDependencies": {
     "coffee-script": ">=1.2.0"
