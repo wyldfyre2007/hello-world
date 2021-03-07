@@ -20,4 +20,11 @@ class Sample extends Adapter
 
 exports.use = (robot) ->
   new Sample robot
- 
+ "dependencies": {
+  },
+  "peerDependencies": {
+    "hubot": ">=2.0"
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.2.0"
+  }
